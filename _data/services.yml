@@ -1,20 +1,12 @@
 - title: "Birth Support"
   icon: "❧"
-  description: "Continuous labor support from early labor through delivery. Physical comfort measures, emotional guidance, and advocacy for your birth preferences — for you and your partner."
+  description: "Continuous labor and birth support from early labor through delivery. Physical comfort measures, emotional guidance, and advocacy for your birth preferences — for you and your partner. I attend all hospitals, all birth centers, and home births where a licensed midwife is present."
   includes:
     - Two prenatal visits
     - On-call support from 37 weeks
     - Continuous labor and birth attendance
-    - One postpartum follow-up visit
-
-- title: "Postpartum Care"
-  icon: "✦"
-  description: "In-home visits during the fourth trimester to support your recovery, feeding journey, and transition into parenthood. No agenda — just presence and practical help."
-  includes:
-    - Newborn care guidance
-    - Infant feeding support (breast & bottle)
-    - Emotional check-ins for the whole family
-    - Resource and referral network
+    - Postpartum follow-up visit
+    - Fees range from $1,500–$2,500 (payment plans available)
 
 - title: "Childbirth Education"
   icon: "◈"
@@ -24,3 +16,12 @@
     - Birth setting and team communication
     - Newborn basics
     - Custom to your birth preferences
+
+- title: "Virtual Support"
+  icon: "✦"
+  description: "Remote and virtual doula support for families outside my in-person service area or those who prefer flexible, distance-based care. Available throughout your pregnancy, labor, and postpartum period."
+  includes:
+    - Prenatal preparation sessions via video call
+    - Virtual labor support and guidance
+    - Postpartum check-ins
+    - Flexible scheduling to fit your needs

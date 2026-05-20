@@ -1,38 +1,39 @@
----
----
-
+@charset "UTF-8";
 /* ============================================
    DOULA SITE — Main Stylesheet
    Aesthetic: Warm editorial, organic luxury
    ============================================ */
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@300;400;500&display=swap");
 /* ---- Tokens ---- */
 :root {
-  --cream:      #FAF7F2;
-  --parchment:  #F2EDE4;
-  --linen:      #E8DFD0;
-  --stone:      #C9B99A;
-  --sage:       #7A8C74;
+  --cream: #FAF7F2;
+  --parchment: #F2EDE4;
+  --linen: #E8DFD0;
+  --stone: #C9B99A;
+  --sage: #7A8C74;
   --sage-light: #B5C2B0;
-  --ink:        #2C2620;
-  --ink-mid:    #5C4F42;
-  --ink-light:  #9C8C7C;
-  --rose:       #C4786A;
+  --ink: #2C2620;
+  --ink-mid: #5C4F42;
+  --ink-light: #9C8C7C;
+  --rose: #C4786A;
   --rose-light: #E8C4BB;
-
-  --serif:  'Cormorant Garamond', Georgia, serif;
-  --sans:   'Jost', system-ui, sans-serif;
-
-  --max:    1140px;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Jost', system-ui, sans-serif;
+  --max: 1140px;
   --gutter: clamp(1.5rem, 5vw, 4rem);
   --section-gap: clamp(4rem, 10vw, 8rem);
 }
 
 /* ---- Reset ---- */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--cream);
@@ -44,8 +45,15 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img { max-width: 100%; display: block; }
-a { color: inherit; text-decoration: none; }
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 /* ---- Typography ---- */
 h1, h2, h3, h4 {
@@ -71,14 +79,18 @@ h1, h2, h3, h4 {
   padding: 0 var(--gutter);
 }
 
-section { padding: var(--section-gap) 0; }
+section {
+  padding: var(--section-gap) 0;
+}
 
 /* ============================================
    HEADER / NAV
    ============================================ */
 .site-header {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   padding: 1.25rem var(--gutter);
   display: flex;
@@ -120,7 +132,9 @@ nav a {
   transition: color 0.2s;
 }
 
-nav a:hover { color: var(--rose); }
+nav a:hover {
+  color: var(--rose);
+}
 
 /* ============================================
    HERO
@@ -136,12 +150,10 @@ nav a:hover { color: var(--rose); }
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background:
-    radial-gradient(ellipse 60% 80% at 70% 50%, rgba(196,120,106,0.07) 0%, transparent 70%),
-    radial-gradient(ellipse 40% 60% at 20% 80%, rgba(122,140,116,0.06) 0%, transparent 60%);
+  background: radial-gradient(ellipse 60% 80% at 70% 50%, rgba(196, 120, 106, 0.07) 0%, transparent 70%), radial-gradient(ellipse 40% 60% at 20% 80%, rgba(122, 140, 116, 0.06) 0%, transparent 60%);
   pointer-events: none;
 }
 
@@ -151,7 +163,9 @@ nav a:hover { color: var(--rose); }
   animation: fadeUp 0.9s ease both;
 }
 
-.hero-text .eyebrow { margin-bottom: 1.5rem; }
+.hero-text .eyebrow {
+  margin-bottom: 1.5rem;
+}
 
 .hero-headline {
   font-size: clamp(2.8rem, 5.5vw, 5rem);
@@ -275,7 +289,9 @@ nav a:hover { color: var(--rose); }
   padding-top: 0.35rem;
 }
 
-.intro-label .eyebrow { margin-bottom: 0.75rem; }
+.intro-label .eyebrow {
+  margin-bottom: 0.75rem;
+}
 
 .divider-line {
   width: 40px;
@@ -303,7 +319,9 @@ nav a:hover { color: var(--rose); }
   max-width: 60ch;
 }
 
-.intro-content p + p { margin-top: 1rem; }
+.intro-content p + p {
+  margin-top: 1rem;
+}
 
 /* ============================================
    SERVICES
@@ -313,7 +331,9 @@ nav a:hover { color: var(--rose); }
   margin-bottom: clamp(2.5rem, 5vw, 4rem);
 }
 
-.services-header .eyebrow { margin-bottom: 1rem; }
+.services-header .eyebrow {
+  margin-bottom: 1rem;
+}
 
 .services-header h2 {
   font-size: clamp(2rem, 3.5vw, 3rem);
@@ -333,7 +353,9 @@ nav a:hover { color: var(--rose); }
   transition: background 0.3s;
 }
 
-.service-card:hover { background: var(--parchment); }
+.service-card:hover {
+  background: var(--parchment);
+}
 
 .service-icon {
   font-size: 1.5rem;
@@ -371,7 +393,7 @@ nav a:hover { color: var(--rose); }
 }
 
 .service-includes li::before {
-  content: '–';
+  content: "–";
   position: absolute;
   left: 0;
   color: var(--rose);
@@ -398,7 +420,7 @@ nav a:hover { color: var(--rose); }
 
 .about-image-wrap img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 4/5;
   object-fit: cover;
   object-position: center top;
   display: block;
@@ -412,7 +434,7 @@ nav a:hover { color: var(--rose); }
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  color: rgba(250,247,242,0.2);
+  color: rgba(250, 247, 242, 0.2);
   font-size: 0.75rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -424,13 +446,13 @@ nav a:hover { color: var(--rose); }
 }
 
 .about-image-wrap::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 1.5rem;
   left: 1.5rem;
   right: -1.5rem;
   bottom: -1.5rem;
-  border: 1px solid rgba(250,247,242,0.1);
+  border: 1px solid rgba(250, 247, 242, 0.1);
   z-index: -1;
   pointer-events: none;
 }
@@ -447,13 +469,15 @@ nav a:hover { color: var(--rose); }
 }
 
 .about-text p {
-  color: rgba(250,247,242,0.75);
+  color: rgba(250, 247, 242, 0.75);
   font-size: 1rem;
   line-height: 1.85;
   max-width: 52ch;
 }
 
-.about-text p + p { margin-top: 1rem; }
+.about-text p + p {
+  margin-top: 1rem;
+}
 
 .about-details {
   margin-top: 2.25rem;
@@ -466,12 +490,12 @@ nav a:hover { color: var(--rose); }
   font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.08em;
-  color: rgba(250,247,242,0.45);
+  color: rgba(250, 247, 242, 0.45);
   text-transform: uppercase;
 }
 
 .about-detail strong {
-  color: rgba(250,247,242,0.8);
+  color: rgba(250, 247, 242, 0.8);
   font-weight: 400;
   margin-right: 0.5rem;
 }
@@ -488,8 +512,13 @@ nav a:hover { color: var(--rose); }
   margin-bottom: clamp(2.5rem, 5vw, 4rem);
 }
 
-.testimonials-header .eyebrow { margin-bottom: 1rem; }
-.testimonials-header h2 { font-size: clamp(2rem, 3.5vw, 3rem); }
+.testimonials-header .eyebrow {
+  margin-bottom: 1rem;
+}
+
+.testimonials-header h2 {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+}
 
 .testimonials-grid {
   display: grid;
@@ -515,8 +544,15 @@ nav a:hover { color: var(--rose); }
   flex: 1;
 }
 
-.testimonial-text::before { content: '\201C'; color: var(--rose); }
-.testimonial-text::after  { content: '\201D'; color: var(--rose); }
+.testimonial-text::before {
+  content: "“";
+  color: var(--rose);
+}
+
+.testimonial-text::after {
+  content: "”";
+  color: var(--rose);
+}
 
 .testimonial-meta {
   border-top: 1px solid var(--linen);
@@ -550,7 +586,9 @@ nav a:hover { color: var(--rose); }
   margin: 0 auto;
 }
 
-.contact .eyebrow { margin-bottom: 1.25rem; }
+.contact .eyebrow {
+  margin-bottom: 1.25rem;
+}
 
 .contact h2 {
   font-size: clamp(2rem, 4vw, 3.5rem);
@@ -601,14 +639,16 @@ nav a:hover { color: var(--rose); }
   transition: border-color 0.2s;
 }
 
-.contact-link-value:hover { border-color: var(--rose); }
+.contact-link-value:hover {
+  border-color: var(--rose);
+}
 
 /* ============================================
    FOOTER
    ============================================ */
 .site-footer {
   background: var(--ink);
-  color: rgba(250,247,242,0.4);
+  color: rgba(250, 247, 242, 0.4);
   padding: 2rem var(--gutter);
   display: flex;
   justify-content: space-between;
@@ -620,25 +660,35 @@ nav a:hover { color: var(--rose); }
 }
 
 .site-footer a {
-  color: rgba(250,247,242,0.5);
+  color: rgba(250, 247, 242, 0.5);
   transition: color 0.2s;
 }
 
-.site-footer a:hover { color: var(--cream); }
+.site-footer a:hover {
+  color: var(--cream);
+}
 
 /* ============================================
    ANIMATIONS
    ============================================ */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 /* Scroll-reveal utility */
 .reveal {
   opacity: 0;
@@ -661,27 +711,38 @@ nav a:hover { color: var(--rose); }
     padding-top: 6rem;
     padding-bottom: 0;
   }
-
   .hero-image {
     height: 60vw;
     border-left: none;
     border-top: 1px solid var(--linen);
   }
-
-  .hero-text { padding: var(--gutter); }
-
-  .intro-inner { grid-template-columns: 1fr; }
-
-  .services-grid { grid-template-columns: 1fr; }
-
-  .about-inner { grid-template-columns: 1fr; }
-
-  .testimonials-grid { grid-template-columns: 1fr; }
-
-  nav ul { gap: 1.5rem; }
+  .hero-text {
+    padding: var(--gutter);
+  }
+  .intro-inner {
+    grid-template-columns: 1fr;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-inner {
+    grid-template-columns: 1fr;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  nav ul {
+    gap: 1.5rem;
+  }
 }
-
 @media (max-width: 600px) {
-  nav { display: none; }
-  .contact-links { flex-direction: column; align-items: center; }
+  nav {
+    display: none;
+  }
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
+/*# sourceMappingURL=main.css.map */

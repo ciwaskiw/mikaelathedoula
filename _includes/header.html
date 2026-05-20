@@ -1,14 +1,13 @@
 <header class="site-header" id="site-header">
   <a href="{{ '/' | relative_url }}" class="site-logo">
-    {{ site.author.name }}
-    <span>Birth &amp; Postpartum Doula</span>
+    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="{{ site.author.name }}, Birth Doula" class="site-logo-img">
   </a>
 
   <nav aria-label="Main navigation">
     <ul>
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#testimonials">Kind Words</a></li>
+      {% if site.data.testimonials.size > 0 %}<li><a href="#testimonials">Kind Words</a></li>{% endif %}
       <li><a href="#contact">Connect</a></li>
     </ul>
   </nav>

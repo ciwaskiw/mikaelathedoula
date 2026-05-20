@@ -1,15 +1,16 @@
-title: "Sarah Merritt | Birth & Postpartum Doula"
-description: "Compassionate support for your birth journey in Baltimore, MD and surrounding areas."
+title: "Mikaela Iwaskiw | Birth Doula"
+description: "Certified birth doula (CD(DONA)) serving Gwynn Oak, MD and surrounding areas within 40 miles. Continuous birth support, childbirth education, and virtual doula services."
 baseurl: ""
 url: ""
 
 author:
-  name: Sarah Merritt
-  location: Baltimore, MD
-  email: sarah@example.com
-  phone: "(410) 555-0192"
-  agency: "Nurture Birth Collective"
-  agency_url: "https://example.com"
+  name: Mikaela Iwaskiw
+  credentials: "CD(DONA)"
+  location: "Gwynn Oak, MD"
+  email: "mikaela.iwaskiw@gmail.com"
+  phone: "443-518-6405"
+  agency: "Doulas of Baltimore"
+  agency_url: "https://doulasofbaltimore.com"
 
 # Build settings
 markdown: kramdown
