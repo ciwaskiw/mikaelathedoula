@@ -52,7 +52,7 @@ layout: default
           simply to help you find it.
         </p>
         <p>
-          I work through <a href="{{ site.author.agency_url }}" target="_blank" rel="noopener" style="color: var(--rose); border-bottom: 1px solid var(--rose-light);">{{ site.author.agency }}</a>,
+          I work through {{ site.author.agency }},
           which means you have the confidence of a vetted, credentialed professional
           with the warmth of a personal relationship.
         </p>
@@ -85,12 +85,7 @@ layout: default
     </div>
 
     <div style="text-align:center; margin-top: 2.5rem;">
-      <p style="color: var(--ink-light); font-size: 0.9rem; margin-bottom: 1.25rem;">
-        All services are booked through {{ site.author.agency }}.
-      </p>
-      <a href="{{ site.author.agency_url }}" target="_blank" rel="noopener" class="btn btn-outline">
-        Book a Consultation
-      </a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
     </div>
   </div>
 </section>
@@ -187,12 +182,6 @@ layout: default
           <span class="contact-link-label">Phone / Text</span>
           <a href="tel:{{ site.author.phone | remove: '(' | remove: ')' | remove: ' ' | remove: '-' }}" class="contact-link-value">
             {{ site.author.phone }}
-          </a>
-        </div>
-        <div class="contact-link">
-          <span class="contact-link-label">Book via Agency</span>
-          <a href="{{ site.author.agency_url }}" target="_blank" rel="noopener" class="contact-link-value">
-            {{ site.author.agency }}
           </a>
         </div>
       </div>

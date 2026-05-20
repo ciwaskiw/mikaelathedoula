@@ -7,6 +7,35 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   {% seo %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "{{ site.author.name }}",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "telephone": "{{ site.author.phone }}",
+    "email": "{{ site.author.email }}",
+    "image": "{{ site.url }}{{ site.baseurl }}/assets/images/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Gwynn Oak",
+      "addressRegion": "MD",
+      "addressCountry": "US"
+    },
+    "areaServed": {
+      "@type": "GeoCircle",
+      "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": 39.3337,
+        "longitude": -76.7302
+      },
+      "geoRadius": "64000"
+    },
+    "priceRange": "$1500-$2500",
+    "knowsAbout": ["Birth Support", "Childbirth Education", "Virtual Doula Support"]
+  }
+  </script>
 </head>
 <body>
 
