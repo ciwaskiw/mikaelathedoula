@@ -1,0 +1,24 @@
+title: "Sarah Merritt | Birth & Postpartum Doula"
+description: "Compassionate support for your birth journey in Baltimore, MD and surrounding areas."
+baseurl: ""
+url: ""
+
+author:
+  name: Sarah Merritt
+  location: Baltimore, MD
+  email: sarah@example.com
+  phone: "(410) 555-0192"
+  agency: "Nurture Birth Collective"
+  agency_url: "https://example.com"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules

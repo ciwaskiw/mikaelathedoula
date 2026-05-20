@@ -1,0 +1,209 @@
+---
+layout: default
+---
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Introduction">
+  <div class="hero-text">
+    <p class="eyebrow">Baltimore, MD &amp; Surrounding Areas</p>
+    <h1 class="hero-headline">
+      You deserve to feel <em>held</em><br>
+      through every moment.
+    </h1>
+    <p class="hero-body">
+      I'm {{ site.author.name }}, a certified birth and postpartum doula.
+      I'm here to support you, advocate for you, and help your family
+      step into this new chapter with confidence and calm.
+    </p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn btn-primary">Get in Touch</a>
+      <a href="#services" class="btn btn-outline">Explore Services</a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <!--
+      REPLACE: swap the placeholder below for a real <img> tag.
+      Example:
+        <img src="/assets/images/hero.jpg" alt="Sarah Merritt, doula, with a new family">
+      Use a warm, authentic photo — ideally candid, not a studio headshot.
+    -->
+    <div class="hero-image-placeholder" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+          d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+      </svg>
+      <span>Your photo here</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section class="intro" id="philosophy">
+  <div class="container">
+    <div class="intro-inner">
+      <div class="intro-label reveal">
+        <p class="eyebrow">My Approach</p>
+        <div class="divider-line"></div>
+      </div>
+      <div class="intro-content reveal">
+        <blockquote>
+          Birth is not a medical event to be managed — it is a profound human
+          experience to be witnessed with care.
+        </blockquote>
+        <p>
+          Every family I support receives my undivided presence. I don't bring a
+          script or a checklist — I bring years of training, deep listening, and
+          a genuine belief that you already hold the strength you need. My role is
+          simply to help you find it.
+        </p>
+        <p>
+          I work through <a href="{{ site.author.agency_url }}" target="_blank" rel="noopener" style="color: var(--rose); border-bottom: 1px solid var(--rose-light);">{{ site.author.agency }}</a>,
+          which means you have the confidence of a vetted, credentialed professional
+          with the warmth of a personal relationship.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services-section" id="services">
+  <div class="container">
+    <div class="services-header reveal">
+      <p class="eyebrow">What I Offer</p>
+      <h2>Support for every stage</h2>
+    </div>
+
+    <div class="services-grid">
+      {% for service in site.data.services %}
+      <div class="service-card reveal">
+        <span class="service-icon" aria-hidden="true">{{ service.icon }}</span>
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+        <ul class="service-includes">
+          {% for item in service.includes %}
+          <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div style="text-align:center; margin-top: 2.5rem;">
+      <p style="color: var(--ink-light); font-size: 0.9rem; margin-bottom: 1.25rem;">
+        All services are booked through {{ site.author.agency }}.
+      </p>
+      <a href="{{ site.author.agency_url }}" target="_blank" rel="noopener" class="btn btn-outline">
+        Book a Consultation
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-image-wrap reveal">
+        <!--
+          REPLACE: swap for a real photo.
+          <img src="/assets/images/sarah-about.jpg" alt="Sarah Merritt">
+        -->
+        <div class="about-image-placeholder" aria-hidden="true">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+          </svg>
+          <span>Your photo here</span>
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <p class="eyebrow">About Sarah</p>
+        <h2>A familiar face for an unforgettable day.</h2>
+        <p>
+          I came to doula work after my own experience of feeling unsupported
+          during labor — and realizing how much difference the right person in
+          the room could have made. I became certified so I could be that person
+          for others.
+        </p>
+        <p>
+          Outside of supporting families, I live in Baltimore with my husband
+          and two kids. I believe deeply in community, in the power of women
+          supporting women, and in the quiet magic of the early postpartum days.
+        </p>
+        <p>
+          <!-- Add your actual certifications/training here -->
+          I hold certification through DONA International and have supported
+          over 60 families through birth and the postpartum period.
+        </p>
+        <div class="about-details">
+          <span class="about-detail"><strong>Certified:</strong> DONA International</span>
+          <span class="about-detail"><strong>Agency:</strong> {{ site.author.agency }}</span>
+          <span class="about-detail"><strong>Serving:</strong> {{ site.author.location }} &amp; surrounding counties</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="testimonials-header reveal">
+      <p class="eyebrow">Kind Words</p>
+      <h2>Families I've had the privilege to support</h2>
+    </div>
+
+    <div class="testimonials-grid">
+      {% for t in site.data.testimonials %}
+      <div class="testimonial-card reveal">
+        <p class="testimonial-text">{{ t.quote }}</p>
+        <div class="testimonial-meta">
+          <p class="testimonial-name">{{ t.name }}</p>
+          <p class="testimonial-context">{{ t.context }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-inner reveal">
+      <p class="eyebrow">Let's Connect</p>
+      <h2>Ready to start the <em>conversation?</em></h2>
+      <p>
+        I'd love to hear about your plans and hopes for your birth or postpartum
+        experience. Reach out — there's no pressure, no pitch, just a conversation.
+      </p>
+      <a href="mailto:{{ site.author.email }}" class="btn btn-primary">
+        Send Me a Message
+      </a>
+
+      <div class="contact-links">
+        <div class="contact-link">
+          <span class="contact-link-label">Email</span>
+          <a href="mailto:{{ site.author.email }}" class="contact-link-value">
+            {{ site.author.email }}
+          </a>
+        </div>
+        <div class="contact-link">
+          <span class="contact-link-label">Phone / Text</span>
+          <a href="tel:{{ site.author.phone | remove: '(' | remove: ')' | remove: ' ' | remove: '-' }}" class="contact-link-value">
+            {{ site.author.phone }}
+          </a>
+        </div>
+        <div class="contact-link">
+          <span class="contact-link-label">Book via Agency</span>
+          <a href="{{ site.author.agency_url }}" target="_blank" rel="noopener" class="contact-link-value">
+            {{ site.author.agency }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
