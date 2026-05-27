@@ -2,20 +2,21 @@
   icon: "❧"
   description: "Continuous labor and birth support from early labor through delivery. Physical comfort measures, emotional guidance, and advocacy for your birth preferences — for you and your partner. I attend all hospitals, all birth centers, and home births where a licensed midwife is present."
   includes:
-    - Two prenatal visits
+    - One prenatal visit
     - On-call support from 37 weeks
     - Continuous labor and birth attendance
     - Postpartum follow-up visit
-    - Fees range from $1,500–$2,500 (payment plans available)
+    - Fee&#58; $1,750 (payment plans available)
 
 - title: "Childbirth Education"
   icon: "◈"
-  description: "Private, personalized birth preparation sessions for you and your support person. We cover what matters to your specific situation — no generic classroom approach."
+  description: "A private, personalized birth preparation session for you and your support person. We cover what matters to your specific situation — no generic classroom approach."
   includes:
     - Labor stages and comfort techniques
     - Birth setting and team communication
     - Newborn basics
     - Custom to your birth preferences
+    - Fee&#58; $200
 
 - title: "Virtual Support"
   icon: "✦"
@@ -25,3 +26,4 @@
     - Virtual labor support and guidance
     - Postpartum check-ins
     - Flexible scheduling to fit your needs
+    - Fee&#58; $700

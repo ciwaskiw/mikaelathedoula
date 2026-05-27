@@ -5,15 +5,15 @@ layout: default
 <!-- ============ HERO ============ -->
 <section class="hero" aria-label="Introduction">
   <div class="hero-text">
-    <p class="eyebrow">Gwynn Oak, MD &amp; Surrounding Areas</p>
+    <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Mikaela Iwaskiw, Birth Doula" class="hero-logo">
+    <p class="eyebrow">Baltimore City &amp; Baltimore, Howard, Anne Arundel &amp; Carroll Counties</p>
     <h1 class="hero-headline">
-      You deserve to feel <em>held</em><br>
-      through every moment.
+      Compassionate support for pregnancy and <em>birth</em>
     </h1>
     <p class="hero-body">
-      I'm {{ site.author.name }}, {{ site.author.credentials }} — a certified birth doula
-      with five years of experience. I'm here to support you, advocate for you, and
-      help your family step into this new chapter with confidence and calm.
+      Hi, I'm Mikaela, a DONA-certified birth doula based in Baltimore, MD.
+      I'm here to support and advocate for you as your family steps into
+      this new chapter with confidence and calm.
     </p>
     <div class="hero-actions">
       <a href="#contact" class="btn btn-primary">Get in Touch</a>
@@ -22,51 +22,17 @@ layout: default
   </div>
 
   <div class="hero-image">
-    <!--
-      REPLACE: swap the placeholder below for a real <img> tag.
-      Example:
-        <img src="/assets/images/hero.jpg" alt="Sarah Merritt, doula, with a new family">
-      Use a warm, authentic photo — ideally candid, not a studio headshot.
-    -->
-    <img src="{{ '/assets/images/headshot.jpg' | relative_url }}" alt="Mikaela Iwaskiw, birth doula">
+    <!-- TODO: Replace with new headshot when available -->
+    <img src="{{ '/assets/images/topheadshot.jpg' | relative_url }}" alt="Mikaela Iwaskiw, birth doula">
   </div>
 </section>
 
-<!-- ============ PHILOSOPHY ============ -->
-<section class="intro" id="philosophy">
-  <div class="container">
-    <div class="intro-inner">
-      <div class="intro-label reveal">
-        <p class="eyebrow">My Approach</p>
-        <div class="divider-line"></div>
-      </div>
-      <div class="intro-content reveal">
-        <blockquote>
-          Birth is not a medical event to be managed — it is a profound human
-          experience to be witnessed with care.
-        </blockquote>
-        <p>
-          Every family I support receives my undivided presence. I don't bring a
-          script or a checklist — I bring years of training, deep listening, and
-          a genuine belief that you already hold the strength you need. My role is
-          simply to help you find it.
-        </p>
-        <p>
-          I work through {{ site.author.agency }},
-          which means you have the confidence of a vetted, credentialed professional
-          with the warmth of a personal relationship.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ============ SERVICES ============ -->
 <section class="services-section" id="services">
   <div class="container">
     <div class="services-header reveal">
-      <p class="eyebrow">What I Offer</p>
-      <h2>Support for every stage</h2>
+      <h2>What I Offer</h2>
     </div>
 
     <div class="services-grid">
@@ -104,30 +70,21 @@ layout: default
 
       <div class="about-text reveal">
         <p class="eyebrow">About Mikaela</p>
-        <h2>A familiar face for an unforgettable day.</h2>
+        <h2>Supporting families through empathy and encouragement</h2>
         <p>
-          <!-- TODO: Replace with Mikaela's personal story in her own words. -->
-          I'm Mikaela Iwaskiw, a DONA-certified birth doula based in Gwynn Oak,
-          Maryland. Over the past five years I've had the privilege of supporting
-          over 20 families through labor, birth, and the early days of parenthood.
+          I'm Mikaela Iwaskiw, a DONA-certified birth doula based in Baltimore,
+          Maryland. I believe every birthing person deserves continuous, compassionate
+          support and a knowledgeable advocate in their corner.
         </p>
         <p>
-          <!-- TODO: Add personal philosophy, what drew you to doula work, etc. -->
-          I believe every birthing person deserves continuous, compassionate support
-          and a knowledgeable advocate in their corner. Whether you're planning a
-          hospital birth, a birth center experience, or a home birth with a midwife,
-          I'm here for you.
+          Whether you're planning a hospital birth, a birth center experience, or a
+          home birth with a midwife, I'm here for you.
         </p>
         <p>
           I hold the CD(DONA) credential through DONA International, completed my
           training in January 2023, and am certified in First Aid and CPR.
           I'm happy to discuss payment plans to make sure support is accessible to you.
         </p>
-        <div class="about-details">
-          <span class="about-detail"><strong>Credential:</strong> CD(DONA) — DONA International</span>
-          <span class="about-detail"><strong>Agency:</strong> {{ site.author.agency }}</span>
-          <span class="about-detail"><strong>Serving:</strong> {{ site.author.location }} &amp; within 40 miles</span>
-        </div>
       </div>
     </div>
   </div>
@@ -167,9 +124,26 @@ layout: default
         I'd love to hear about your plans and hopes for your birth or postpartum
         experience. Reach out — there's no pressure, no pitch, just a conversation.
       </p>
-      <a href="mailto:{{ site.author.email }}" class="btn btn-primary">
-        Send Me a Message
-      </a>
+      <!-- TODO: Sign up at formspree.io, create a form, and replace YOUR_FORM_ID below -->
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone" placeholder="(xxx) xxx-xxxx">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required rows="4" placeholder="Tell me about yourself and what support you're looking for..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
 
       <div class="contact-links">
         <div class="contact-link">
